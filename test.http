@@ -1,0 +1,38 @@
+GET http://127.0.0.1:8000/api/users HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8000/api/users HTTP/1.1
+Content-Type:application/json
+
+{
+    "name": "Samuel John",
+    "gender": "Male",
+    "dateofbirth": "12/12/1990",
+    "phone": "0901234232",
+    "address": "Amawbia Ngene",
+    "nextofkin": "Samuel Jonadab",
+    "nextofkinphone": "09012312234",
+    "email": "samueljohn21@gmail.com",
+    "password": "password"
+}
+
+###
+
+PUT http://127.0.0.1:8000/api/users/4 HTTP/1.1
+Content-Type:application/json
+
+{
+    "name": "Samuel John",
+    "gender": "Male",
+    "dateofbirth": "09/12/1990",
+    "phone": "0901234232",
+    "address": "New Friends Estate Ngene Amawbia",
+    "nextofkin": "Samuel Jonadab",
+    "nextofkinphone": "09012312234",
+    "email": "samueljohn21@gmail.com",
+    "password": "password"
+}
+
+###
+DELETE http://127.0.0.1:8000/api/users/4 HTTP/1.1
